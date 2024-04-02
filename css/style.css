@@ -154,7 +154,10 @@ a,
 img {
      max-width: 100%;
      height: auto;
+
+     
 }
+
 
  :focus {
      outline: 0;
@@ -622,6 +625,83 @@ ul.conat_info li a:hover {
 
 
 /** end obje section **/
+
+
+/** modee section **/
+
+.modee {
+     background-color: #fff;
+     padding: 70px 0 155px 0;
+}
+
+.modee .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.modee .titlepage p {
+     color: #0d0202;
+     padding-top: 15px;
+     text-align: center;
+     margin: 0 50px;
+     font-size: 17px;
+     font-weight: 400;
+     margin-bottom: 20;
+}
+
+
+/** end modee section **/
+
+/** metri section **/
+
+.metri {
+     background-color: #fff;
+     padding: 70px 0 155px 0;
+}
+
+.metri .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.metri .titlepage p {
+     color: #0d0202;
+     padding-top: 15px;
+     text-align: center;
+     margin: 0 50px;
+     font-size: 17px;
+     font-weight: 400;
+     margin-bottom: 20;
+}
+
+
+/** end metri section **/
+
+
+/** conclu section **/
+
+.conclu {
+     background-color: #fff;
+     padding: 70px 0 155px 0;
+}
+
+.conclu .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.conclu .titlepage p {
+     color: #0d0202;
+     padding-top: 15px;
+     text-align: center;
+     margin: 0 50px;
+     font-size: 17px;
+     font-weight: 400;
+     margin-bottom: 20;
+}
+
+
+/** end hipo section **/
 
 
 /** testimonial section **/

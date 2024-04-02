@@ -45,8 +45,10 @@
       <a href="#about">Acerca de Nosotros</a>
       <a href="#choose">Justificación</a>
       <a href="#hipo">Hipótesis</a>
-      <a href="#testimonial">Testimonial</a>
-      <a href="#objetivos">Objetivos</a>
+      <a href="#obje">Objetivos</a>
+      <a href="#modee">Modelo Detalles</a>
+      <a href="#metri">Validacion y Metricas</a>
+      <a href="#conclu">Conclusiones preliminares</a>
    </div>
    <!-- header -->
    <header>
@@ -273,7 +275,7 @@
                <div class="titlepage">
                   <h2>Objetivos</h2>
                   <span><img src="images/Objetivos.png" alt=""></span>
-                  <p>El objetivo de este modelo de clasificación es asignar a cada individuo en una de las categorías de nivel de obesidad (por ejemplo, Normal_Weight, Overweight_Level_I, Overweight_Level_II, Obesity_Type_I, Obesity_Type_II, Obesity_Type_III) en función de las características proporcionadas. Para lograr esto, utilizaremos algoritmos de clasificación supervisada que puedan aprender de los datos de entrenamiento y luego hacer predicciones sobre nuevos datos.</p>
+                  <p>Nuestro objetivo es desarrollar un modelo de clasificación eficiente que pueda predecir con precisión la categoría de peso de un individuo, como peso insuficiente, peso normal y varios niveles de sobrepeso y obesidad. El modelo debe minimizar los errores de clasificación y maximizar la precisión de la predicción para cada categoría.</p>
                </div>
             </div>
          </div>
@@ -281,6 +283,63 @@
       
    </section>
    <!-- end obj section -->
+
+
+   <!-- modelodetalles section -->
+   <section id="modee" class="modee">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Detalles sobre la seleccion del modelo</h2>
+                  <p>El modelo seleccionado fue entrenado para clasificar los datos en varias categorías basadas en pesos corporales. Las métricas de precisión, recall y puntuación F1 indican cómo el modelo se desempeña en cada clase. La selección se basó en la capacidad del modelo para distinguir entre estas categorías de manera efectiva, lo cual es evidente en las métricas individuales por clase y los promedios reportados.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </section>
+   <!-- end modelo detalles section -->
+
+
+   <!-- metri section -->
+   <section id="metri" class="metri">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Validación y Métricas</h2>
+                  <p>Utilizamos una metodología de validación cruzada para evaluar nuestro modelo, asegurando que cada instancia de los datos sea usada tanto para entrenamiento como para prueba. Las métricas empleadas incluyen precisión, que mide la proporción de identificaciones correctas; recall, que mide la proporción de positivos reales identificados correctamente; y la puntuación F1, que es la media armónica de precisión y recall. </p>
+                  <span><img src="images/result.jpeg" alt=""></span>
+                  <p>La matriz de confusión proporciona una visualización de la clasificación por parte del modelo en cada categoría.</p>
+                  <span><img src="images/table.jpeg" alt=""></span>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </section>
+   <!-- end metri section -->
+
+   <!-- conclu section -->
+   <section id="conclu" class="conclu">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Conclusiones preliminares</h2>
+                  <span><img src="images/conclu.png" alt=""></span>
+                  <p>El modelo muestra un alto grado de precisión, como se refleja en la precisión global y las puntuaciones F1. Sin embargo, hay variaciones en el desempeño entre las categorías, como se evidencia en la precisión y el recall variables. Por ejemplo, la categoría 'Obesity_Type_III' muestra tanto una precisión como un recall perfectos, indicando una clasificación correcta en todos los casos. No obstante, la categoría 'Normal_Weight' tiene un recall más bajo, sugiriendo que el modelo puede estar teniendo dificultades para identificar todos los casos reales de esta categoría. La matriz de confusión también sugiere cierta confusión entre categorías cercanas, como 'Overweight_Level_I' y 'Overweight_Level_II'. Continuaremos ajustando el modelo para mejorar estas áreas y lograr un equilibrio entre precisión y recall en todas las categorías.</p>
+                  
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </section>
+   <!-- end conclu section -->
+
      <!-- testimonial section -->
 
    <!--  footer -->
