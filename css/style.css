@@ -598,6 +598,31 @@ ul.conat_info li a:hover {
 
 /** end hipo section **/
 
+/** obje section **/
+
+.obje {
+     background-color: #fff;
+     padding: 70px 0 155px 0;
+}
+
+.obje .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.obje .titlepage p {
+     color: #0d0202;
+     padding-top: 15px;
+     text-align: center;
+     margin: 0 50px;
+     font-size: 17px;
+     font-weight: 400;
+     margin-bottom: 20;
+}
+
+
+/** end obje section **/
+
 
 /** testimonial section **/
 
