@@ -134,6 +134,8 @@ p {
      line-height: 24px;
 }
 
+
+
 a {
      color: #222222;
      text-decoration: none;
@@ -698,7 +700,11 @@ ul.conat_info li a:hover {
      font-size: 17px;
      font-weight: 400;
      margin-bottom: 20;
+
+     
 }
+
+
 
 
 /** end hipo section **/
