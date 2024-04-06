@@ -194,12 +194,12 @@
                   <div class="about_box yell_colo">
                      <i><img src="images/KraMen.jpeg" alt="#" /></i>
                      Krauz Mendoza Es un estudiante de ingeniaría de sistemas y empresario,
-                      apasionado por la tecnología, es considerado una persona muy
-                       persistente capaz de lograr lo que sea si se lo propone, a lo largo
-                        de su carrera ha tenido que lidiar con el estrés del trabajo, pero
-                         esto solo lo ha motivado mucho más a cumplir sus metas, siempre 
-                         está en búsqueda de nuevas oportunidades tanto laborales como de
-                          emprendimiento y superación personal.
+                     apasionado por la tecnología, es considerado una persona muy
+                     persistente capaz de lograr lo que sea si se lo propone, a lo largo
+                     de su carrera ha tenido que lidiar con el estrés del trabajo, pero
+                     esto solo lo ha motivado mucho más a cumplir sus metas, siempre
+                     está en búsqueda de nuevas oportunidades tanto laborales como de
+                     emprendimiento y superación personal.
                   </div>
                </div>
             </div>
@@ -247,7 +247,10 @@
    </div>
    <!-- end choose section -->
    <!-- testimonial section -->
-   <iframe width="1000" height="750" src="https://lookerstudio.google.com/embed/reporting/344ec31a-9458-4184-a62d-23c3ae539481/page/VlvrD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+   <iframe width="1000" height="750"
+      src="https://lookerstudio.google.com/embed/reporting/344ec31a-9458-4184-a62d-23c3ae539481/page/VlvrD"
+      frameborder="0" style="border:0" allowfullscreen
+      sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
    </div>
    <!-- end testimonial section -->
    <!-- hipo section -->
@@ -257,30 +260,44 @@
             <div class="col-md-12">
                <div class="titlepage">
                   <h2>Hipótesis</h2>
-                  <p>Existe una relación entre la edad, el género, los antecedentes familiares por sobrepeso, el consumo frecuente de comida alta en calorías, el consumo de alimentos entre comidas, el consumo diario de agua, la frecuencia de actividad física y el tiempo de uso de dispositivos tecnológicos que influyen directamente al nivel de obesida</p>
-                  <p>La edad y el género proporcionan información fundamental sobre el metabolismo y los hábitos relacionados con la alimentación y la actividad física, lo que puede influir significativamente en el peso corporal. Por otro lado, los antecedentes familiares de sobrepeso sugieren una predisposición genética que puede aumentar el riesgo de obesidad en un individuo. Además, el consumo frecuente de comida alta en calorías y el hábito de comer entre comidas están asociados con una dieta poco saludable, a su vez el tiempo dedicado al uso de dispositivos tecnológicos puede indicar comportamientos sedentarios que contribuyen al aumento de peso. mientras que el consumo diario de agua y la frecuencia de actividad física están vinculados a un estilo de vida más equilibrado y activo.</p>
+                  <p>Existe una relación entre la edad, el género, los antecedentes familiares por sobrepeso, el consumo
+                     frecuente de comida alta en calorías, el consumo de alimentos entre comidas, el consumo diario de
+                     agua, la frecuencia de actividad física y el tiempo de uso de dispositivos tecnológicos que
+                     influyen directamente al nivel de obesida</p>
+                  <p>La edad y el género proporcionan información fundamental sobre el metabolismo y los hábitos
+                     relacionados con la alimentación y la actividad física, lo que puede influir significativamente en
+                     el peso corporal. Por otro lado, los antecedentes familiares de sobrepeso sugieren una
+                     predisposición genética que puede aumentar el riesgo de obesidad en un individuo. Además, el
+                     consumo frecuente de comida alta en calorías y el hábito de comer entre comidas están asociados con
+                     una dieta poco saludable, a su vez el tiempo dedicado al uso de dispositivos tecnológicos puede
+                     indicar comportamientos sedentarios que contribuyen al aumento de peso. mientras que el consumo
+                     diario de agua y la frecuencia de actividad física están vinculados a un estilo de vida más
+                     equilibrado y activo.</p>
                   <span><img src="images/hipo.jpg" alt=""></span>
                </div>
             </div>
          </div>
       </div>
-      
+
    </section>
    <!-- end hipo section -->
-    <!-- obj section -->
-    <section id="obje" class="obje">
+   <!-- obj section -->
+   <section id="obje" class="obje">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
                <div class="titlepage">
                   <h2>Objetivos</h2>
                   <span><img src="images/Objetivos.png" alt=""></span>
-                  <p>Nuestro objetivo es desarrollar un modelo de clasificación eficiente que pueda predecir con precisión la categoría de peso de un individuo, como peso insuficiente, peso normal y varios niveles de sobrepeso y obesidad. El modelo debe minimizar los errores de clasificación y maximizar la precisión de la predicción para cada categoría.</p>
+                  <p>Nuestro objetivo es desarrollar un modelo de clasificación eficiente que pueda predecir con
+                     precisión la categoría de peso de un individuo, como peso insuficiente, peso normal y varios
+                     niveles de sobrepeso y obesidad. El modelo debe minimizar los errores de clasificación y maximizar
+                     la precisión de la predicción para cada categoría.</p>
                </div>
             </div>
          </div>
       </div>
-      
+
    </section>
    <!-- end obj section -->
 
@@ -292,16 +309,41 @@
             <div class="col-md-12">
                <div class="titlepage">
                   <h2>Detalles sobre la seleccion del modelo</h2>
-                  <p>El modelo k-NN fue seleccionado por su eficacia en la clasificación de datos multidimensionales y su flexibilidad para ajustarse a distintas configuraciones de clasificación. Esta técnica, que clasifica los datos basándose en la similitud de las características con sus 'k' vecinos más cercanos, resultó ser particularmente adecuada para nuestro conjunto de datos debido a su capacidad para manejar las complejidades inherentes a las múltiples variables de estilo de vida que afectan al peso corporal.</p>
-                  <div><p>Evaluamos el desempeño del modelo k-NN a través de métricas estándar de clasificación: precisión, recall y la puntuación F1. La precisión nos indica la proporción de identificaciones correctas para cada categoría de peso, el recall refleja la capacidad del modelo para detectar todas las instancias relevantes dentro de una categoría y la puntuación F1 ofrece un balance entre la precisión y el recall, útil para comparar el rendimiento general entre clases desbalanceadas.</p></div>
-                  <div><p>Las métricas por clase muestran cómo el k-NN logra distinguir eficazmente entre categorías. Por ejemplo, para las clases 'Obesity_Type_II' y 'Obesity_Type_III', el modelo exhibió altos valores de precisión y recall, lo que demuestra su capacidad para identificar y clasificar correctamente estos casos críticos. Los promedios ponderados y macro reflejan un rendimiento robusto del modelo en todo el espectro de categorías de peso, lo que valida nuestra elección inicial de k-NN para este problema de clasificación multiclase.</p></div> 
-                  <div><p>La selección de k-NN se basó en estos indicadores de rendimiento y en su simplicidad conceptual, que facilita la interpretación de los resultados y la comunicación de los hallazgos a un público no especializado. Además, la elección de 'k', el número de vecinos, se ajustó cuidadosamente para maximizar estas métricas, asegurando un equilibrio entre la sensibilidad y la especificidad del modelo.</p></div>
-               
+                  <p>El modelo k-NN fue seleccionado por su eficacia en la clasificación de datos multidimensionales y
+                     su flexibilidad para ajustarse a distintas configuraciones de clasificación. Esta técnica, que
+                     clasifica los datos basándose en la similitud de las características con sus 'k' vecinos más
+                     cercanos, resultó ser particularmente adecuada para nuestro conjunto de datos debido a su capacidad
+                     para manejar las complejidades inherentes a las múltiples variables de estilo de vida que afectan
+                     al peso corporal.</p>
+                  <div>
+                     <p>Evaluamos el desempeño del modelo k-NN a través de métricas estándar de clasificación:
+                        precisión, recall y la puntuación F1. La precisión nos indica la proporción de identificaciones
+                        correctas para cada categoría de peso, el recall refleja la capacidad del modelo para detectar
+                        todas las instancias relevantes dentro de una categoría y la puntuación F1 ofrece un balance
+                        entre la precisión y el recall, útil para comparar el rendimiento general entre clases
+                        desbalanceadas.</p>
+                  </div>
+                  <div>
+                     <p>Las métricas por clase muestran cómo el k-NN logra distinguir eficazmente entre categorías. Por
+                        ejemplo, para las clases 'Obesity_Type_II' y 'Obesity_Type_III', el modelo exhibió altos valores
+                        de precisión y recall, lo que demuestra su capacidad para identificar y clasificar correctamente
+                        estos casos críticos. Los promedios ponderados y macro reflejan un rendimiento robusto del
+                        modelo en todo el espectro de categorías de peso, lo que valida nuestra elección inicial de k-NN
+                        para este problema de clasificación multiclase.</p>
+                  </div>
+                  <div>
+                     <p>La selección de k-NN se basó en estos indicadores de rendimiento y en su simplicidad conceptual,
+                        que facilita la interpretación de los resultados y la comunicación de los hallazgos a un público
+                        no especializado. Además, la elección de 'k', el número de vecinos, se ajustó cuidadosamente
+                        para maximizar estas métricas, asegurando un equilibrio entre la sensibilidad y la especificidad
+                        del modelo.</p>
+                  </div>
+
                </div>
             </div>
          </div>
       </div>
-      
+
    </section>
    <!-- end modelo detalles section -->
 
@@ -313,15 +355,20 @@
             <div class="col-md-12">
                <div class="titlepage">
                   <h2>Validación y Métricas</h2>
-                  <p>Utilizamos una metodología de validación cruzada para evaluar nuestro modelo, asegurando que cada instancia de los datos sea usada tanto para entrenamiento como para prueba. Las métricas empleadas incluyen precisión, que mide la proporción de identificaciones correctas; recall, que mide la proporción de positivos reales identificados correctamente; y la puntuación F1, que es la media armónica de precisión y recall. </p>
+                  <p>Utilizamos una metodología de validación cruzada para evaluar nuestro modelo, asegurando que cada
+                     instancia de los datos sea usada tanto para entrenamiento como para prueba. Las métricas empleadas
+                     incluyen precisión, que mide la proporción de identificaciones correctas; recall, que mide la
+                     proporción de positivos reales identificados correctamente; y la puntuación F1, que es la media
+                     armónica de precisión y recall. </p>
                   <span><img src="images/result.jpeg" alt=""></span>
-                  <p>La matriz de confusión proporciona una visualización de la clasificación por parte del modelo en cada categoría.</p>
+                  <p>La matriz de confusión proporciona una visualización de la clasificación por parte del modelo en
+                     cada categoría.</p>
                   <span><img src="images/table.jpeg" alt=""></span>
                </div>
             </div>
          </div>
       </div>
-      
+
    </section>
    <!-- end metri section -->
 
@@ -333,25 +380,57 @@
                <div class="titlepage">
                   <h2>Conclusiones preliminares</h2>
                   <span><img src="images/conclu.png" alt=""></span>
-                  <p>La elección del modelo para este estudio se basó en la necesidad de comprender y predecir categorías de peso, dadas las complejas interrelaciones entre múltiples factores de estilo de vida. Seleccionamos un modelo de [tipo de modelo, e.g., "bosques aleatorios" o "máquinas de vectores de soporte"], reconocido por su robustez y capacidad para manejar un gran número de predictores, como los utilizados en nuestro estudio. Este modelo fue elegido específicamente por su habilidad para realizar una buena generalización, minimizando así el sobreajuste, y su facilidad para interpretar la importancia de las características individuales.</p>
-                  <div><p>El rendimiento del modelo se evaluó utilizando las métricas de precisión, recall y puntuación F1, que son críticas para un problema de clasificación multiclase como el nuestro, donde es esencial no solo identificar correctamente las instancias de una clase (precisión), sino también capturar la mayoría de las instancias positivas reales (recall).</p></div>
-                  <div><p>Los resultados hasta la fecha sugieren que el modelo es capaz de discriminar con eficacia entre diferentes niveles de obesidad, lo que se corrobora con altas puntuaciones de F1 para las clases de 'Obesity_Type_II' y 'Obesity_Type_III'. Sin embargo, la variación en el rendimiento entre las clases indica que, mientras algunas variables como la edad y los antecedentes familiares de sobrepeso están bien capturadas por el modelo, otras como el consumo de comida alta en calorías y el uso de dispositivos tecnológicos pueden requerir una caracterización más matizada.</p></div>
-                  <div><p>Estos hallazgos apoyan nuestra hipótesis inicial, proporcionando evidencia de que hay una relación significativa entre los factores de estilo de vida especificados y los niveles de obesidad. La fuerza de esta relación se manifiesta en la capacidad del modelo para clasificar correctamente a los individuos en las categorías de peso correctas basándose en estas variables.</p></div>
-                  <div><p>En resumen, los resultados preliminares indican una fuerte correlación entre las variables de estilo de vida y la obesidad, validando la efectividad de nuestro enfoque de modelado.</p></div>
-                  
+                  <div style="text-align:justify; justify-self: start;"></div>
+                  <p>La elección del modelo para este estudio se basó en la necesidad de comprender y predecir las
+                     categorías de peso, dadas las complejas interrelaciones entre múltiples factores de estilo de vida.
+                     Seleccionamos un modelo de KNN (K vecinos más cercanos), ya que contamos con múltiples clases que
+                     buscamos predecir. Debido a esto, no podíamos optar por un modelo de regresión lineal o logística.
+                     Este modelo fue elegido específicamente por su habilidad para generalizar bien, minimizando así el
+                     sobreajuste, y su facilidad para interpretar la importancia de las características individuales.
+                  </p>
+                  <div>
+                     <p>Evaluamos el rendimiento del modelo utilizando métricas como precisión, recall y puntuación F1,
+                        que son críticas para un problema de clasificación multiclase como el nuestro. Es esencial no
+                        solo identificar correctamente las instancias de una clase (precisión), sino también capturar la
+                        mayoría de las instancias positivas reales (recall).
+                     </p>
+                  </div>
+                  <div>
+                     <p>Los resultados hasta la fecha sugieren que el modelo es capaz de discriminar eficazmente entre
+                        diferentes niveles de obesidad, como se confirma con las altas puntuaciones de las métricas
+                        elegidas en cada una de las clases.Sin embargo, la variación en el rendimiento entre las clases
+                        sugiere que, aunque algunas variables como la edad y los antecedentes familiares de sobrepeso
+                        están bien capturadas por el modelo, otras como el consumo de comida alta en calorías y el uso
+                        de dispositivos tecnológicos podrían necesitar una caracterización más detallada o ajustes
+                        adicionales para una mejor comprensión de su influencia en la obesidad.
+                     </p>
+                  </div>
+                  <div>
+                     <p>Estos hallazgos respaldan nuestra hipótesis inicial de que existe una relación entre la edad, el
+                        género, los antecedentes familiares de sobrepeso, el consumo frecuente de comida alta en
+                        calorías, el consumo de alimentos entre comidas, el consumo diario de agua, la frecuencia de
+                        actividad física y el tiempo de uso de dispositivos tecnológicos, que influyen directamente en
+                        el nivel de obesidad.
+                     </p>
+                  </div>
+                  <div>
+                     <p>En resumen, los resultados preliminares indican una fuerte correlación entre las variables de
+                        estilo de vida y la obesidad, validando la efectividad de nuestro enfoque de modelado.</p>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-      
+      </div>
+
    </section>
    <!-- end conclu section -->
 
-     <!-- testimonial section -->
+   <!-- testimonial section -->
 
    <!--  footer -->
    <footer>
-   
+
    </footer>
    <!-- end footer -->
    <!-- Javascript files-->
