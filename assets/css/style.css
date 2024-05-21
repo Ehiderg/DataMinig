@@ -4,6 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: gray;
+    padding-bottom: 30px;
 }
 
 header {
@@ -12,15 +14,9 @@ header {
     display: flex;
     align-items: center;
     padding: 0 20px;
+    width: 97%;
 }
 
-.header-container{
-    width: 100vh;
-}
-
-img {
-    width: 20px;
-}
 
 header img {
     width: 50px;
@@ -28,6 +24,44 @@ header img {
 }
 
 section {
-    width: 300px;
+    margin: 0 50vh;
     text-align: justify;
+    background-color: white;
+    margin-top: 20px;
+    padding: 50px 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+section h3 {
+    text-align: center;
+}
+
+.integrantes-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.integrante {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 25px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.perfil-photo {
+    width: 25vh;
+    border-radius: 25px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.image {
+    width: 75%;
+    align-self: center;
+    border-radius: 5px;
 }
