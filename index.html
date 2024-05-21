@@ -207,7 +207,8 @@
 
 
     <section id="first-model" class="first-model">
-        <h2>Detalles sobre la seleccion del modelo</h2>
+        <h2>Modelo #1 KNN(K-nearest neighbors)</h2>
+        <h3>Justificación</h3>
         <p>El modelo k-NN fue seleccionado por su eficacia en la clasificación de datos
             multidimensionales y
             su flexibilidad para ajustarse a distintas configuraciones de clasificación. Esta
@@ -256,83 +257,94 @@
                 especificidad
                 del modelo.</p>
         </div>
-    </section>
 
-
-    <section id="first-metricas" class="first-metricas">
-        <h2>Validación y Métricas</h2>
+        <h3>Validación y Métricas</h3>
         <p>Utilizamos una metodología de validación cruzada para evaluar nuestro modelo, asegurando
             que cada instancia de los datos sea usada tanto para entrenamiento como para prueba. Las métricas
             empleadas incluyen precisión, que mide la proporción de identificaciones correctas; recall, que
             mide la proporción de positivos reales identificados correctamente; y la puntuación F1, que es
             la media armónica de precisión y recall. </p>
-        <img src="./assets/img/result.jpeg" alt="" class="image">
+        <img src="./assets/img/result.jpeg" alt="" class="image"><br>
         <p>La matriz de confusión proporciona una visualización de la clasificación por parte del
             modelo en cada categoría.</p>
         <img src="./assets/img/table.jpeg" alt="" class="image">
     </section>
 
-    <section id="conclusion" class="conclusion">
-        <h2>Conclusiones preliminares</h2>
-        <img src="./assets/img/conclu.png" alt="" class="image">
-        <div style="text-align:justify; justify-self: start;"></div>
-        <p>La elección del modelo para este estudio se basó en la necesidad de comprender y predecir
+
+    <section id="second-model" class="second-model">
+        <h2>Modelo #2 Random Forest</h2>
+        <h3>Justificación</h3>
+
+        <p>
+            El uso de un modelo de random forest para predecir múltiples clases de peso en nuestro dataset es una
+            elección
+            acertada debido a su capacidad para manejar tanto datos categóricos como numéricos. Dado que nuestro dataset
+            incluye características como género, edad, altura y peso, así como hábitos alimenticios y de consumo, random
+            forest puede manejar esta diversidad de variables de manera efectiva. Su capacidad para realizar una
+            selección
+            de características implícita asegura que las variables más relevantes se utilicen adecuadamente, mejorando
+            así
+            la precisión de las predicciones.</p>
+
+        <p>
+            Random forest es especialmente adecuado para problemas de clasificación multiclase, como en nuestro caso,
+            donde
+            necesitamos predecir siete categorías de peso diferentes. La naturaleza de ensemble del modelo, que combina
             las
-            categorías de peso, dadas las complejas interrelaciones entre múltiples factores de
-            estilo de vida.
-            Seleccionamos un modelo de KNN (K vecinos más cercanos), ya que contamos con múltiples
-            clases que
-            buscamos predecir. Debido a esto, no podíamos optar por un modelo de regresión lineal o
-            logística.
-            Este modelo fue elegido específicamente por su habilidad para generalizar bien,
-            minimizando así el
-            sobreajuste, y su facilidad para interpretar la importancia de las características
-            individuales.
+            predicciones de múltiples árboles de decisión, permite una predicción más precisa y generalizable. Además,
+            su
+            robustez frente a datos ruidosos y valores atípicos es crucial en datasets de salud y nutrición, donde la
+            variabilidad individual puede ser significativa.
         </p>
-        <div>
-            <p>Evaluamos el rendimiento del modelo utilizando métricas como precisión, recall y
-                puntuación F1,
-                que son críticas para un problema de clasificación multiclase como el nuestro. Es
-                esencial no
-                solo identificar correctamente las instancias de una clase (precisión), sino también
-                capturar la
-                mayoría de las instancias positivas reales (recall).
-            </p>
-        </div>
-        <div>
-            <p>Los resultados hasta la fecha sugieren que el modelo es capaz de discriminar
-                eficazmente entre
-                diferentes niveles de obesidad, como se confirma con las altas puntuaciones de las
-                métricas
-                elegidas en cada una de las clases.Sin embargo, la variación en el rendimiento entre
-                las clases
-                sugiere que, aunque algunas variables como la edad y los antecedentes familiares de
-                sobrepeso
-                están bien capturadas por el modelo, otras como el consumo de comida alta en
-                calorías y el uso
-                de dispositivos tecnológicos podrían necesitar una caracterización más detallada o
-                ajustes
-                adicionales para una mejor comprensión de su influencia en la obesidad.
-            </p>
-        </div>
-        <div>
-            <p>Estos hallazgos respaldan nuestra hipótesis inicial de que existe una relación entre
-                la edad, el
-                género, los antecedentes familiares de sobrepeso, el consumo frecuente de comida
-                alta en
-                calorías, el consumo de alimentos entre comidas, el consumo diario de agua, la
-                frecuencia de
-                actividad física y el tiempo de uso de dispositivos tecnológicos, que influyen
-                directamente en
-                el nivel de obesidad.
-            </p>
-        </div>
-        <div>
-            <p>En resumen, los resultados preliminares indican una fuerte correlación entre las
-                variables de
-                estilo de vida y la obesidad, validando la efectividad de nuestro enfoque de
-                modelado.</p>
-        </div>
+
+        <p>
+            Otra ventaja importante de random forest es su interpretabilidad. El modelo puede proporcionar información
+            sobre
+            la importancia de las características, permitiéndonos identificar qué variables influyen más en las
+            distintas
+            categorías de peso. Esto no solo mejora la comprensión del modelo, sino que también puede informar
+            estrategias
+            de intervención personalizadas. En resumen, random forest ofrece una combinación de precisión, robustez y
+            capacidad de interpretación que lo hace ideal para predecir las múltiples clases de peso en este dataset.
+        </p>
+
+
+        <h3>Validación y Métricas</h3>
+        <p>Así mismo como en el modelo anterior, hemos decidido hacer uso de la validación cruzada para evaluar la
+            factibilidad de este modelo. Hemos utilizado las mismas métricas que en el caso mencionado anteriormente,
+            las cuales son: precisión, que nos da a grandes rasgos una idea de la efectividad del modelo; pero, dado que
+            estamos en el ámbito de la salud de las personas, también usamos el recall para determinar qué tan efectivo
+            es en términos de evitar los falsos negativos. Por último, empleamos el F1 score para determinar una
+            proporción idónea entre estas dos métricas.
+        </p>
+        <img src="./assets/img/metricsRD.png" alt="" class="image"><br>
+        <p>
+            La matriz de confusión es una herramienta poderosa que nos ayuda a evidenciar cómo se relacionan los valores
+            predichos con los valores reales.
+        </p>
+        <img src="./assets/img/matrixRD.png" alt="" class="image">
+
+
+
+    </section>
+
+
+    <section id="conclusion" class="conclusion">
+        <h2>Conclusión</h2>
+        <img src="./assets/img/conclu.png" alt="" class="image"> <br>
+        <p>
+            Ambos modelos demostraron ser eficaces en la clasificación de los niveles de obesidad, con fortalezas en
+            diferentes áreas. Mientras que el modelo k-NN es simple y fácil de interpretar, el modelo Random Forest
+            ofrece
+            una precisión y consistencia ligeramente superiores. Nuestra elección final depende de la prioridad del
+            análisis: para aplicaciones donde la precisión y la consistencia son críticas, Random Forest es la mejor
+            opción.
+            Sin embargo, para interpretaciones más sencillas y rápidas, k-NN sigue siendo una opción viable. La
+            combinación
+            de ambos modelos podría aprovechar las fortalezas de cada uno para obtener un enfoque más robusto y preciso
+            en
+            futuros estudios.
+        </p>
     </section>
 </body>
 
